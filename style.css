@@ -5,3 +5,50 @@
   font-family: 'Poppins', sans-serif;
 }
 
+section {
+  padding: 100px;
+}
+
+.banner {
+  position: relative;
+  min-height: 100vh;
+  /* background: url(/images/eatme_slider.jpg); */
+  background-size: cover;
+  /* background-position: right; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+    overflow: hidden;
+    background: #1f171a;  /* fallback colour. Make sure this is just one solid colour. */
+    background: -webkit-linear-gradient(rgba(29, 38, 113, 0.8), rgba(54, 45, 48, 0.8)), url(/images/eatme_slider.jpg);
+    background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(31, 25, 27, 0.8)), url(/images/eatme_slider.jpg); /* The least supported option. */
+}
+
+
+.banner h2 {
+  font-size: 3em;
+  font-weight: 500;
+  line-height: 1.5em;
+  color: #fff;
+}
+
+.banner h3 {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #fff;
+}
+
+.btn {
+  position: relative;
+  background: #2196f3;
+  display: inline-block;
+  color: #fff;
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
