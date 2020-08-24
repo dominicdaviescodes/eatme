@@ -152,3 +152,20 @@ header.sticky ul li a {
 .content p {
   margin-bottom: 20px;
 }
+
+/* Cast and Creative section */
+
+.cast .content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.cast .content .workBx {
+  width: 50%;
+  padding: 20px;
+}
+
+.cast .content .workBx img {
+  max-width: 100%;
+}
