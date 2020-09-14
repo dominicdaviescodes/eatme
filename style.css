@@ -22,13 +22,8 @@ section {
   overflow: hidden;
   background: #1f171a;
   /* fallback colour. Make sure this is just one solid colour. */
-  background: -webkit-linear-gradient(
-      rgba(29, 38, 113, 0.8),
-      rgba(54, 45, 48, 0.8)
-    ),
-    url(/images/eatme_slider.jpg);
-  background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(31, 25, 27, 0.8)),
-    url(/images/eatme_slider.jpg);
+  background: -webkit-linear-gradient( rgba(29, 38, 113, 0.8), rgba(54, 45, 48, 0.8)), url(/images/eatme_slider.jpg);
+  background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(31, 25, 27, 0.8)), url(/images/eatme_slider.jpg);
   /* The least supported option. */
 }
 
@@ -168,4 +163,55 @@ header.sticky ul li a {
 
 .cast .content .workBx img {
   max-width: 100%;
+}
+
+/* testimonial section */
+
+.testimonial {
+  background: #f7f7f7;
+}
+
+.testimonial .content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.testimonial .content .testimonialBx {
+  max-width: calc(50% - 40px);
+  padding: 60px 40px;
+  margin: 20px;
+  background: #2196f3;
+}
+
+.testimonial .content .testimonialBx p {
+  color: #fff;
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.testimonial .content .testimonialBx h3 {
+  margin-top: 40px;
+  text-align: end;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1em;
+}
+
+.testimonial .content .testimonialBx h3 span {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 600px) {
+  .testimonial .content .testimonialBx {
+    max-width: calc(100% - 20px);
+    padding: 40px 20px;
+    margin: 10px;
+  }
+  .testimonial .content .testimonialBx h3 {
+    margin-top: 20px;
+  }
 }
